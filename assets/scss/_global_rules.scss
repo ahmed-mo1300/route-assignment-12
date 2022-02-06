@@ -1,0 +1,60 @@
+/* Global Rules */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+  --main-color: #d62e33;
+  --main-overlay-color: rgba(214, 46, 51, 0.6);
+  --nav-width: 15.625rem;
+  --main-transition: 0.4s ease;
+  --section-padding-top: 70px;
+  --section-padding-bottom: 70px;
+  --text-color: #777;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  // scroll-behavior: smooth;
+
+  $html-font-size: (768px, 12px), (992px, 14px), (1200px, 16px);
+  @each $i, $j in $html-font-size {
+    @media (min-width: $i) {
+      font-size: $j;
+    }
+  }
+
+  @media (max-width: 767px) {
+    font-size: 12px;
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-y: hidden;
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+
+  $container-width: (767px, 750px), (991px, 970px), (1200px, 1170px);
+  @each $i, $j in $container-width {
+    @media (min-width: $i) {
+      width: $j;
+    }
+  }
+}

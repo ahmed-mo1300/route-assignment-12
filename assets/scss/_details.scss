@@ -1,0 +1,26 @@
+/* Details */
+section#details {
+  padding-top: var(--section-padding-top);
+  padding-bottom: var(--section-padding-bottom);
+
+  div.container {
+    text-align: center;
+    font-size: 1rem / 200%;
+
+    h3 {
+      padding: 0.625rem;
+      margin: 0;
+      background-color: var(--main-overlay-color);
+      cursor: pointer;
+      color: white;
+      text-transform: capitalize;
+    }
+
+    p {
+      margin: 0;
+      padding: 0.9375rem;
+      background-color: #ccc;
+      display: none;
+    }
+  }
+}

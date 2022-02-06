@@ -1,0 +1,134 @@
+section#contact {
+  padding-top: var(--section-padding-top);
+  padding-bottom: var(--section-padding-bottom);
+  background-color: #fafafa;
+
+  div.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & > * {
+      width: 50%;
+      padding: 0.9375rem;
+
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+
+    div.info {
+      h2 {
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: #000;
+        margin-top: 0;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-bottom: 1.25rem;
+        line-height: 1.6;
+      }
+
+      ul {
+        margin: 1.25rem;
+        line-height: 1.7;
+
+        li {
+          padding: 0.625rem 0;
+
+          &:nth-child(2) {
+            color: var(--main-color);
+          }
+
+          span {
+            margin-top: 0.125rem;
+
+            i {
+              color: var(--text-color);
+            }
+          }
+        }
+      }
+
+      div.social-icons {
+        margin-top: 1.625rem;
+
+        a {
+          color: var(--text-color);
+
+          i {
+            border: 0.0625rem solid var(--text-color);
+            padding: 0.875rem 1.25rem;
+            margin: 0 0.3125rem;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            transition: var(--main-transition);
+
+            &:hover {
+              color: #fff;
+              background-color: var(--main-color);
+            }
+          }
+        }
+      }
+    }
+
+    div.form {
+      form {
+        & > * {
+          display: block;
+
+          &:not(:last-child) {
+            margin-bottom: 1.5625rem;
+          }
+        }
+
+        .my-form-control {
+          width: 100%;
+          color: #555;
+          background-color: transparent;
+          background-image: none;
+          border: 0.0625rem solid #ccc;
+          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          height: 2.875rem;
+          padding: 0.625rem 1rem;
+          font-size: 1.125rem;
+          line-height: 1.3333333;
+          border-radius: 0.375rem;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        textarea.my-form-control {
+          height: 9.375rem;
+          resize: none;
+        }
+
+        p {
+          font-size: 1.4rem;
+          font-weight: bold;
+
+          span.end-of-chars {
+            color: var(--main-color);
+          }
+        }
+
+        button.my-btn {
+          background-color: #d62e33;
+          color: #fff;
+          padding: 0.625rem 1.25rem;
+          border-radius: 0;
+          text-transform: uppercase;
+          border: 0;
+          outline: 0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
